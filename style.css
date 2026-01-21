@@ -1,6 +1,48 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2761
-\cocoatextscaling0\cocoaplatform0{\fonttbl}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+/* CSS GRID LAYOUT */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+}
+
+/* Sections */
+.info,
+.puzzle-section,
+.explanation {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* FLEXBOX PUZZLE */
+.puzzle-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: auto;
+}
+
+/* Puzzle Images */
+.puzzle-container img {
+  width: 150px;
+  height: 150px;
+}
+
+/* Hide the incorrect puzzle piece */
+.hidden {
+  display: none;
+}
+
+/* Headings */
+h1, h2, h3 {
+  text-align: center;
 }
